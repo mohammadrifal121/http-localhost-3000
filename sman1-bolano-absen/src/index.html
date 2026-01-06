@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absen Digital SMAN 1 BOLANO</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/attendance.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/logo.svg" alt="Logo SMAN 1 BOLANO" class="logo">
+            <h1>SMAN 1 BOLANO</h1>
+            <h2>Nama Guru: Mohammad Rifal, S.Pd., Gr</h2>
+            <h3>Mata Pelajaran: Matematika</h3>
+            <h4>Kelas: __________</h4>
+            <p>Tanggal: <input type="date" id="attendance-date"></p>
+            <button id="mark-all-present">Hadir Semua</button>
+        </header>
+        
+        <main>
+            <table id="attendance-table">
+                <thead>
+                    <tr>
+                        <th>NISN</th>
+                        <th>Nama Siswa</th>
+                        <th>Hadir</th>
+                        <th>Izin</th>
+                        <th>Sakit</th>
+                        <th>Absen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0001</td>
+                        <td>Nama Siswa</td>
+                        <td><input type="checkbox" class="present"></td>
+                        <td><input type="checkbox" class="permission"></td>
+                        <td><input type="checkbox" class="sick"></td>
+                        <td><input type="checkbox" class="absent"></td>
+                    </tr>
+                    <tr>
+                        <td>0002</td>
+                        <td>Nama Siswa</td>
+                        <td><input type="checkbox" class="present"></td>
+                        <td><input type="checkbox" class="permission"></td>
+                        <td><input type="checkbox" class="sick"></td>
+                        <td><input type="checkbox" class="absent"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="add-student">Tambah Siswa</button>
+        </main>
+        
+        <footer>
+            <p id="save-status" style="display:none;">Absen telah disimpan!</p>
+        </footer>
+    </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/attendance.js"></script>
+</body>
+</html>

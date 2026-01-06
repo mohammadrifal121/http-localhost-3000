@@ -1,0 +1,19 @@
+{
+  "name": "sman1-bolano-absen",
+  "version": "1.0.0",
+  "description": "A digital attendance application for SMAN 1 Bolano.",
+  "main": "src/scripts/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "xlsx": "^0.17.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "Mohammad Rifal, S.Pd., Gr",
+  "license": "MIT"
+}
